@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="mytetris.css" type="text/css">
+    <script src="lodash.min.js"></script>
+</head>
+<body onload="init()">
+    <div class="container" id="container">
+        <div class="record">
+            <div class="score">当前得分：0</div>
+            <div class="top_score"></div>
+        </div>
+        <div class="buttons">
+            <button class="begin" id="begin" onclick="begin()">开始游戏</button>
+            <button class="reset" id="reset" onclick="reset()">重置游戏</button>
+        </div>
+    </div>
+    <script src="mytetris.js"></script>
+</body>
+</html>
