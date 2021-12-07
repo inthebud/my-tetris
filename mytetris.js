@@ -446,3 +446,10 @@ function clearEles(){
     }
     fixedBlocks = {};
 }
+
+//重置游戏最高分
+function reset(){
+    localStorage.setItem('TOP_SCORE',0);
+    document.getElementsByClassName('top_score')[0].innerHTML =
+        '最高得分：'+ localStorage.getItem('TOP_SCORE');
+}
