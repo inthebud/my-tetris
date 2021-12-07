@@ -251,12 +251,6 @@ function createModel() {
     currentY = 0;
     locationBlocks();
 
-    //判断创建的方块是否与已有方块重叠
-    if (isMeet(3,0,currentModel)){
-        //结束游戏
-        gameOver();
-        return;
-    }
     //让模型自动下落
     autoDown();
 }
